@@ -349,7 +349,7 @@ class MCTS(TreeSearch):
         root_children = self.root.children.items()
 
         total_vist_count = 0
-        threshold = self._compute_budget*0.05
+        threshold = self._compute_budget*0.01
 
         branching_factor = []
 
