@@ -341,11 +341,17 @@ class MCTS(TreeSearch):
         root_children = self.root.children.items()
 
         total_vist_count = 0
+        threshold = self._compute_budget*0.1
+
+        branching_factor = []
 
         for index,value in root_children:
             print('index:'+ str(index)+'; value:'+str(value.P_value)+';visit_time:'+str(value.vis_times)+'\n')
             total_vist_count+=value.vis_times
+            if value.vis_times>threshold:
+                branching_factor.append(value.vis_times)
         print('total:'+str(total_vist_count))
+        print('threshold:'+str(len(branching_factor)))
 
         return max(self.root.children.items(),
                    key=lambda act_node: act_node[1].vis_times)[0]
