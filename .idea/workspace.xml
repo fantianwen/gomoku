@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6d92e42-ca47-434a-89e5-8ee7050d0620" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/mcts_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/mcts_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/mcts_demo.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+              <caret line="11" column="90" selection-start-line="11" selection-start-column="90" selection-end-line="11" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -170,23 +169,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558700411070</updated>
-      <workItem from="1558700412304" duration="7302000" />
+      <workItem from="1558700412304" duration="7388000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7302000" />
+    <option name="totallyTimeSpent" value="7388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.18898489" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.18898489" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -242,7 +241,7 @@
     <entry file="file://$PROJECT_DIR$/mcts_demo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+          <caret line="11" column="90" selection-start-line="11" selection-start-column="90" selection-end-line="11" selection-end-column="90" />
         </state>
       </provider>
     </entry>
