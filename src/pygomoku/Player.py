@@ -4,6 +4,7 @@ import abc
 import six
 import sys
 import numpy as np
+import datetime
 from pygomoku.Board import Board
 from pygomoku.mcts.MCTS import MCTS, MCTSWithDNN
 from pygomoku.mcts.policy_fn import rollout_policy_fn, MCTS_expand_policy_fn
@@ -132,10 +133,11 @@ class PureMCTSPlayer(Player):
         self.__color = color
         self.__name = name
         self.__silent = silent
-    
+        self._b_f_n = []
+
     def reset(self):
         self._search_tree.reset()
-    
+
     def __str__(self):
         if self.__color == Board.kPlayerBlack:
             color = "Black[@]"
@@ -143,13 +145,13 @@ class PureMCTSPlayer(Player):
             color = "White[O]"
         else:
             color = "None[+]"
-        
+
         return "[--Player info--]\nPure MCTS Player\nName: {}\nColor: {}\nProperty: {}".format(
             self.__name, color, self._search_tree.__str__()
         )
 
     __repr__ = __str__
-    
+
     def getAction(self, board):
         # check color
         if board.current_player != self.__color:
@@ -158,12 +160,20 @@ class PureMCTSPlayer(Player):
 
         # update the MCT with last move
         self._search_tree.updateWithMove(board.last_move)
-        
+
         # get next move
         next_move = self._search_tree.getMove(board)
+
+        self._b_f_n.append(self._search_tree.get_b_f)
         self._search_tree.updateWithMove(next_move)
         return next_move
-    
+
+    def save_bf(self):
+        now = datetime.datetime.now()
+        timestamp = now.strftime("%Y%m%d%H%M%S")
+        with open('branch_f_'+timestamp+'.txt', "w") as file:
+            file.write(str(sum(self._b_f_n)/len(self._b_f_n)))
+
     def gaussNext(self, board, careless_level=100):
         """Gauss next move of opponent.
         """
@@ -182,13 +192,13 @@ class PureMCTSPlayer(Player):
 
     @property
     def name(self):
-        return self.__name    
+        return self.__name
     @name.setter
     def name(self, given_name):
         if not isinstance(given_name, str):
             return
         self.__name = given_name
-    
+
     @property
     def silent(self):
         return self.__silent
@@ -207,7 +217,7 @@ class DNNMCTSPlayer(Player):
         name: Player's name.
         network: An instance of NeuralNetwork which will be used by player.
         search_tree: A Monte Corlo Search Tree.
-        exploration_level: temperature parameter in (0, 1] controls 
+        exploration_level: temperature parameter in (0, 1] controls
                 the level of exploration.
         self_play: If True, use self_play mode.
     """
@@ -221,7 +231,7 @@ class DNNMCTSPlayer(Player):
         self._silent = silent
         self.exploration_level = exploration_level
         self._self_play = self_play
-    
+
     def reset(self):
         self._search_tree.reset()
 
@@ -231,7 +241,7 @@ class DNNMCTSPlayer(Player):
             raise RuntimeError("The current player's color in board is"
                 "not equal to the color of current player.")
         # check board size
-        if (board.width != self.network.width or 
+        if (board.width != self.network.width or
             board.height != self.network.height):
             raise ValueError("The size of network ({},{}) is not equal to the size of board({},{})".format(
                              self.network.height, self.network.width, board.height, board.width))
@@ -249,7 +259,7 @@ class DNNMCTSPlayer(Player):
             self._search_tree.updateWithMove(board.last_move)
             move = np.random.choice(actions, p=probs)
             self._search_tree.updateWithMove(move)
-        
+
         if return_policy_vec:
             policy_vec = np.zeros(board.width * board.height)
             policy_vec[list(actions)] = probs
@@ -264,7 +274,7 @@ class DNNMCTSPlayer(Player):
             color = "White[O]"
         else:
             color = "None[+]"
-        
+
         return "[--Player info--]\nDNN MCTS Player\nName: {}\nColor: {}\nProperty: {}".format(
             self._name, color, self._search_tree.__str__()
         )
@@ -273,7 +283,7 @@ class DNNMCTSPlayer(Player):
 
     def gaussNext(self):
         pass
-    
+
     @property
     def color(self):
         return self._color
@@ -281,7 +291,7 @@ class DNNMCTSPlayer(Player):
     def color(self, given_color):
         if given_color in [Board.kPlayerBlack, Board.kPlayerWhite]:
             self._color = given_color
-    
+
     @property
     def name(self):
         return self._name
@@ -289,7 +299,7 @@ class DNNMCTSPlayer(Player):
     def name(self, given_name):
         if isinstance(given_name, str):
             self._name = given_name
-    
+
     @property
     def silent(self):
         return self._silent
@@ -298,7 +308,7 @@ class DNNMCTSPlayer(Player):
         if isinstance(given_value, bool):
             self._silent = given_value
             self._search_tree.silent = given_value
-    
+
     @property
     def self_play(self):
         return self._self_play
@@ -307,4 +317,4 @@ class DNNMCTSPlayer(Player):
         if isinstance(given_value, bool):
             self._self_play = given_value
 
-    
+

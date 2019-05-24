@@ -18,16 +18,16 @@ class GameServer(object):
 
     Attributes:
         board: A pygomoku.Board.Board instance, the board we use during game.
-        mode: The mode of game. Valid values are GameServer.kSelfPlayGame and 
+        mode: The mode of game. Valid values are GameServer.kSelfPlayGame and
             GameServer.kNormalGame.
         player1: A pygomoku.Player instance. Player #1 who will play first.
         player2: A pygomoku.Player instance. Player #2. This player will be None if current game is self-play game.
-        silent: A Boolean Value. If True, Game server will not print game info during game. 
+        silent: A Boolean Value. If True, Game server will not print game info during game.
 
     Constants:
         kSelfPlayGame: A constant. This value means current game is a self-play
             game which played by computer itself.
-        kNormalPlayGame: A constant. This value means current game is a normal 
+        kNormalPlayGame: A constant. This value means current game is a normal
             game with two players(either human or ai).
 
     """
@@ -39,7 +39,7 @@ class GameServer(object):
         self.board = board
         self.mode = mode
         self.silent = silent
-        
+
         # Get player1
         if isinstance(player1, Player.Player):
             self.player1 = player1
@@ -60,7 +60,7 @@ class GameServer(object):
             player2 = None
         else:
             raise ValueError("Invalid value for 'mode' attribute of GameServer.")
-    
+
     def showGameInfo(self):
         """Show game informations.
 
@@ -80,16 +80,16 @@ class GameServer(object):
         else:
             print("Self Play\n")
         self.board.printBoard()
-    
+
     def _startNormalGame(self):
         """Start a normal game.
-        
+
         Can be human vs. human or human vs. AI.
         Return color of the winner.
         """
         # initial board
         self.board.initBoard(self.player1.color)
-        
+
         # key: color, value: player
         players = {
             self.player1.color: self.player1,
@@ -103,7 +103,7 @@ class GameServer(object):
 
         if not self.silent:
             self.showGameInfo()
-        
+
         # The main process of a game
         while True:
             current_player = players[self.board.current_player]
@@ -117,14 +117,16 @@ class GameServer(object):
                 if not self.silent:
                     if winner is not None:
                         print("Game end with winner {}(color {}).".format(players[winner].name, stone_color[winner]))
+                        self.player1.save_bf()
                     else:
                         print("Game end with no winner.")
+                        self.player1.save_bf()
                 return winner
-    
+
     def _startSelfPlayGame(self):
         """Start a self-play game using a MCTS player.
 
-        This method will reuse the search tree and store the 
+        This method will reuse the search tree and store the
         self-play data: (state, mcts_probs, z) for training
 
         Return:
@@ -146,20 +148,20 @@ class GameServer(object):
             states_batch.append(self.board.currentState())
             action_probs_batch.append(probs)
             current_players_batch.append(self.board.current_player)
-            
+
             # move
             self.board.play(move)
             self.player1.color = change_color(self.player1.color)
             if not self.silent:
                 self.showGameInfo()
-            
+
             is_end, winner = self.board.gameEnd()
             if is_end:
                 winner_vec = np.zeros(len(current_players_batch))
                 if winner is not None: # if has winner
                     winner_vec[np.array(current_players_batch) == winner] = 1.0
                     winner_vec[np.array(current_players_batch) != winner] = -1.0
-                
+
                 self.player1.reset()
                 if not self.silent:
                     if winner is not None:
@@ -176,4 +178,4 @@ class GameServer(object):
             return self._startNormalGame()
         else:
             return self._startSelfPlayGame()
-    
+

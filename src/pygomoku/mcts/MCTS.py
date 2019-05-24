@@ -258,6 +258,7 @@ class MCTS(TreeSearch):
         self._compute_budget = int(compute_budget)
         self._silent = silent
         self._expand_bound = min(expand_bound, compute_budget)
+        self._branching_f_n = 0
 
     def reset(self):
         self.root = MCTSTreeNode(None, 1.0)
@@ -322,6 +323,9 @@ class MCTS(TreeSearch):
         Return: the selected action
         """
         # if at the beginning of game, we should put stone at center.
+
+        self._branching_f_n = 0
+
         if state.is_empty:
             return len(state.availables) // 2
 
@@ -352,6 +356,8 @@ class MCTS(TreeSearch):
                 branching_factor.append(value.vis_times)
         print('total:'+str(total_vist_count))
         print('threshold:'+str(len(branching_factor)))
+
+        self._branching_f_n = len(branching_factor)
 
         return max(self.root.children.items(),
                    key=lambda act_node: act_node[1].vis_times)[0]
@@ -393,6 +399,11 @@ class MCTS(TreeSearch):
     @property
     def silent(self):
         return self._silent
+
+    @property
+    def get_bf(self):
+        return self._branching_f_n
+
     @silent.setter
     def silent(self, given_value):
         if isinstance(given_value, bool):
