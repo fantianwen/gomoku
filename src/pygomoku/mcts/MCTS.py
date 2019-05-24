@@ -340,7 +340,7 @@ class MCTS(TreeSearch):
 
         root_children = self.root.children.items()
         for index,value in root_children:
-            print('index:'+ str(index)+'; value:'+str(value.P_value())+'\n')
+            print('index:'+ str(index)+'; value:'+str(value.P_value)+'\n')
 
         return max(self.root.children.items(),
                    key=lambda act_node: act_node[1].vis_times)[0]
