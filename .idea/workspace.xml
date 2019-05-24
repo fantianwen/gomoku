@@ -10,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6d92e42-ca47-434a-89e5-8ee7050d0620" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.GITIGNORE" beforeDir="false" afterPath="$PROJECT_DIR$/.GITIGNORE" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,9 +25,13 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.GITIGNORE">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -51,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="333" column="41" lean-forward="true" selection-start-line="333" selection-start-column="41" selection-end-line="333" selection-end-column="41" />
+            <state relative-caret-position="152">
+              <caret line="340" lean-forward="true" selection-start-line="340" selection-end-line="340" />
             </state>
           </provider>
         </entry>
@@ -69,6 +73,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py" />
+        <option value="$PROJECT_DIR$/.GITIGNORE" />
       </list>
     </option>
   </component>
@@ -149,23 +154,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558700411070</updated>
-      <workItem from="1558700412304" duration="872000" />
+      <workItem from="1558700412304" duration="1025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="872000" />
+    <option name="totallyTimeSpent" value="1025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.17602591" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3347732" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -187,9 +192,6 @@
     <entry file="file://$PROJECT_DIR$/mcts_demo.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.GITIGNORE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pygomoku/GameServer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -209,8 +211,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="333" column="41" lean-forward="true" selection-start-line="333" selection-start-column="41" selection-end-line="333" selection-end-column="41" />
+        <state relative-caret-position="152">
+          <caret line="340" lean-forward="true" selection-start-line="340" selection-end-line="340" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.GITIGNORE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>

@@ -15,3 +15,6 @@ __pycache__/
 
 # checkpoint dir
 checkpoint/
+
+src/pygomoku/mcts/__pycache__/
+src/pygomoku/__pycache__/
