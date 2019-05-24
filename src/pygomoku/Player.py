@@ -172,9 +172,9 @@ class PureMCTSPlayer(Player):
     def save_bf(self):
         now = datetime.datetime.now()
         timestamp = now.strftime("%Y%m%d%H%M%S")
-        with open('branch_f_'+timestamp+'.txt', "w") as file:
+        with open(str(self._playout)+'=='+'branch_f_'+timestamp+'.txt', "w") as file:
             ss = ','.join(str(e) for e in self._b_f_n)
-            file.write(str(self._playout)+'=='+ss+"\n"+str(sum(self._b_f_n)/len(self._b_f_n)))
+            file.write(ss+"\n"+str(sum(self._b_f_n)/len(self._b_f_n)))
 
     def gaussNext(self, board, careless_level=100):
         """Gauss next move of opponent.
