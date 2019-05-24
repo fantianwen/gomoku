@@ -9,9 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6d92e42-ca47-434a-89e5-8ee7050d0620" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mcts_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/mcts_demo.py" afterDir="false" />
-    </list>
+    <list default="true" id="b6d92e42-ca47-434a-89e5-8ee7050d0620" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,53 +18,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2000.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/3000.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4000.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/5000.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/6000.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/7000.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/8000.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/9000.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mcts_demo.py">
+        <entry file="file://$PROJECT_DIR$/10000.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.GITIGNORE">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pygomoku/GameServer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="123" column="29" lean-forward="true" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pygomoku/Player.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="165" column="52" lean-forward="true" selection-start-line="165" selection-start-column="52" selection-end-line="165" selection-end-column="52" />
-              <folding>
-                <element signature="e#15#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="350" column="28" lean-forward="true" selection-start-line="350" selection-start-column="28" selection-end-line="350" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="198">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -89,6 +122,15 @@
         <option value="$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py" />
         <option value="$PROJECT_DIR$/src/pygomoku/Player.py" />
         <option value="$PROJECT_DIR$/mcts_demo.py" />
+        <option value="$PROJECT_DIR$/2000.py" />
+        <option value="$PROJECT_DIR$/3000.py" />
+        <option value="$PROJECT_DIR$/4000.py" />
+        <option value="$PROJECT_DIR$/5000.py" />
+        <option value="$PROJECT_DIR$/6000.py" />
+        <option value="$PROJECT_DIR$/7000.py" />
+        <option value="$PROJECT_DIR$/8000.py" />
+        <option value="$PROJECT_DIR$/9000.py" />
+        <option value="$PROJECT_DIR$/10000.py" />
       </list>
     </option>
   </component>
@@ -147,6 +189,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -169,12 +216,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558700411070</updated>
-      <workItem from="1558700412304" duration="8489000" />
+      <workItem from="1558700412304" duration="8733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8489000" />
+    <option name="totallyTimeSpent" value="8733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -185,7 +232,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.14146869" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.1825054" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -240,8 +287,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mcts_demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state>
+          <caret selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2000.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3000.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4000.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5000.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6000.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7000.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8000.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9000.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10000.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
