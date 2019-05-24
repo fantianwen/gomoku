@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6d92e42-ca47-434a-89e5-8ee7050d0620" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pygomoku/GameServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pygomoku/GameServer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pygomoku/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pygomoku/Player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py" afterDir="false" />
     </list>
@@ -40,20 +39,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pygomoku/GameServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="122" column="46" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
+            <state relative-caret-position="402">
+              <caret line="123" column="29" lean-forward="true" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pygomoku/Player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="170" column="10" selection-start-line="170" selection-start-column="10" selection-end-line="170" selection-end-column="10" />
+            <state relative-caret-position="247">
+              <caret line="166" column="48" lean-forward="true" selection-start-line="166" selection-start-column="48" selection-end-line="166" selection-end-column="48" />
               <folding>
                 <element signature="e#15#52#0" expanded="true" />
               </folding>
@@ -64,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="318" column="8" selection-start-line="318" selection-start-column="8" selection-end-line="318" selection-end-column="8" />
+            <state relative-caret-position="193">
+              <caret line="406" column="8" selection-start-line="406" selection-start-column="8" selection-end-line="406" selection-end-column="8" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -83,9 +82,9 @@
       <list>
         <option value="$PROJECT_DIR$/.GITIGNORE" />
         <option value="$PROJECT_DIR$/mcts_demo.py" />
+        <option value="$PROJECT_DIR$/src/pygomoku/GameServer.py" />
         <option value="$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py" />
         <option value="$PROJECT_DIR$/src/pygomoku/Player.py" />
-        <option value="$PROJECT_DIR$/src/pygomoku/GameServer.py" />
       </list>
     </option>
   </component>
@@ -166,23 +165,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558700411070</updated>
-      <workItem from="1558700412304" duration="5003000" />
+      <workItem from="1558700412304" duration="5280000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5003000" />
+    <option name="totallyTimeSpent" value="5280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.19222462" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.28509718" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -215,10 +214,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pygomoku/GameServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="123" column="29" lean-forward="true" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="318" column="8" selection-start-line="318" selection-start-column="8" selection-end-line="318" selection-end-column="8" />
+        <state relative-caret-position="193">
+          <caret line="406" column="8" selection-start-line="406" selection-start-column="8" selection-end-line="406" selection-end-column="8" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -227,18 +233,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pygomoku/Player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="170" column="10" selection-start-line="170" selection-start-column="10" selection-end-line="170" selection-end-column="10" />
+        <state relative-caret-position="247">
+          <caret line="166" column="48" lean-forward="true" selection-start-line="166" selection-start-column="48" selection-end-line="166" selection-end-column="48" />
           <folding>
             <element signature="e#15#52#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pygomoku/GameServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="122" column="46" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
         </state>
       </provider>
     </entry>

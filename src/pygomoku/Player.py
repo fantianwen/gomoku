@@ -164,7 +164,7 @@ class PureMCTSPlayer(Player):
         # get next move
         next_move = self._search_tree.getMove(board)
 
-        self._b_f_n.append(self._search_tree.get_b_f)
+        self._b_f_n.append(self._search_tree.get_bf())
         self._search_tree.updateWithMove(next_move)
         return next_move
 

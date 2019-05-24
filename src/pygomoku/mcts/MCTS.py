@@ -108,6 +108,10 @@ class TreeSearch(object):
         pass
 
     @abc.abstractmethod
+    def get_bf(self):
+        pass
+
+    @abc.abstractmethod
     def updateWithMove(self, last_move):
         """Step forward in the tree, keeping everything we already know
         about the subtree.
@@ -400,7 +404,6 @@ class MCTS(TreeSearch):
     def silent(self):
         return self._silent
 
-    @property
     def get_bf(self):
         return self._branching_f_n
 
