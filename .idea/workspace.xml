@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6d92e42-ca47-434a-89e5-8ee7050d0620" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/pygomoku/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pygomoku/Player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pygomoku/mcts/MCTS.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pygomoku/Player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="166" column="48" lean-forward="true" selection-start-line="166" selection-start-column="48" selection-end-line="166" selection-end-column="48" />
+            <state relative-caret-position="391">
+              <caret line="174" column="54" selection-start-line="174" selection-start-column="54" selection-end-line="174" selection-end-column="54" />
               <folding>
                 <element signature="e#15#52#0" expanded="true" />
               </folding>
@@ -165,12 +164,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558700411070</updated>
-      <workItem from="1558700412304" duration="5280000" />
+      <workItem from="1558700412304" duration="5629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5280000" />
+    <option name="totallyTimeSpent" value="5629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -181,7 +180,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.28509718" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.18898489" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -233,8 +232,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pygomoku/Player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="166" column="48" lean-forward="true" selection-start-line="166" selection-start-column="48" selection-end-line="166" selection-end-column="48" />
+        <state relative-caret-position="391">
+          <caret line="174" column="54" selection-start-line="174" selection-start-column="54" selection-end-line="174" selection-end-column="54" />
           <folding>
             <element signature="e#15#52#0" expanded="true" />
           </folding>
