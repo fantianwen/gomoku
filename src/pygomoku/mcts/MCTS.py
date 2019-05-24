@@ -339,8 +339,13 @@ class MCTS(TreeSearch):
                 # pb.iterEnd()
 
         root_children = self.root.children.items()
+
+        total_vist_count = 0
+
         for index,value in root_children:
             print('index:'+ str(index)+'; value:'+str(value.P_value)+';visit_time:'+str(value.vis_times)+'\n')
+            total_vist_count+=value.vis_times
+        print('total:'+total_vist_count)
 
         return max(self.root.children.items(),
                    key=lambda act_node: act_node[1].vis_times)[0]
