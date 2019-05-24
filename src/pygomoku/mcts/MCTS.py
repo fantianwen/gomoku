@@ -33,7 +33,7 @@ class TreeNode(object):
         Args:
             action_priors:
                 a list of avaliable actions(for UCT).
-                a list of tuple of avaliable actions and their prior probs.          
+                a list of tuple of avaliable actions and their prior probs.
         """
         pass
 
@@ -41,7 +41,7 @@ class TreeNode(object):
     def select(self, weight_c):
         """Select action among children of current node.
 
-        Return: 
+        Return:
             A tuple, (action, next_node)
         """
         pass
@@ -113,7 +113,7 @@ class TreeSearch(object):
         about the subtree.
         """
         pass
-    
+
     @abc.abstractmethod
     def reset(self):
         pass
@@ -132,9 +132,9 @@ class MCTSTreeNode(TreeNode):
         children: A dict whose key is action and value is corresponding child node.
         _vis_times: An integer shows the number of times this node has been visited.
         _Q: Q value, the quality value. Judge the value for exploitation for a node.
-        _U: U value. Judge the value for exploration for a node. A node with more 
+        _U: U value. Judge the value for exploration for a node. A node with more
             visit times will have small U value.
-        _P: The prior probability for a node to be exploration(or the 
+        _P: The prior probability for a node to be exploration(or the
             prior probability for its corresponding action to be taken).
     """
 
@@ -232,8 +232,8 @@ class MCTS(TreeSearch):
     Attributes:
         root: The root node for search tree.
         _expand_policy: A function that takes in a board state and outputs
-            a list of (action, probability) tuples which used for node expanding 
-            and also a score between in [-1,1] (i.e. The expected value of the end 
+            a list of (action, probability) tuples which used for node expanding
+            and also a score between in [-1,1] (i.e. The expected value of the end
             game score from the current player's perspective, in pure MCTS without
             Neural network, this value will be 0) for the current player.
         _rollout_policy: A function similar to expand_policy, used for random play
@@ -254,7 +254,7 @@ class MCTS(TreeSearch):
         self._compute_budget = int(compute_budget)
         self._silent = silent
         self._expand_bound = min(expand_bound, compute_budget)
-    
+
     def reset(self):
         self.root = MCTSTreeNode(None, 1.0)
 
@@ -289,7 +289,7 @@ class MCTS(TreeSearch):
 
         Args:
             state: current board state
-            limit: usually in gomoku we don't need this. The upper bound for 
+            limit: usually in gomoku we don't need this. The upper bound for
                 rollout times.
         """
         # player color of the leaf node
@@ -327,18 +327,18 @@ class MCTS(TreeSearch):
                 self._playout(state_copy)
         else:
             print("Thinking...")
-            pb = ProgressBar(self._compute_budget, total_sharp=20)
+            # pb = ProgressBar(self._compute_budget, total_sharp=20)
             for _ in range(self._compute_budget):
-                pb.iterStart()
+                # pb.iterStart()
                 state_copy = copy.deepcopy(state)
                 self._playout(state_copy)
-                pb.iterEnd()
+                # pb.iterEnd()
 
         return max(self.root.children.items(),
                    key=lambda act_node: act_node[1].vis_times)[0]
         # return max(self.root.children.items(),
         #            key=lambda act_node: act_node[1].Q_value)[0]
-    
+
     def testOut(self):
         return sorted(list(self.root.children.items()), key=lambda x: x[-1])
 
@@ -350,7 +350,7 @@ class MCTS(TreeSearch):
 
         Args:
             state: Current board state.
-            decay_level: A value describe the importence of this think action. 
+            decay_level: A value describe the importence of this think action.
                 A higher value means MCTS will pay less attention to this 'think action'.
         """
         for _ in range(self._compute_budget//decay_level):
@@ -387,8 +387,8 @@ class MCTSWithDNN(TreeSearch):
     Attributes:
         root: The root node for search tree.
         _policy_value_fn: A function that takes in a board state and outputs
-            a list of (action, probability) tuples which used for node expanding 
-            and also a score between in [-1,1] (i.e. The expected value of the end 
+            a list of (action, probability) tuples which used for node expanding
+            and also a score between in [-1,1] (i.e. The expected value of the end
             game score from the current player's perspective, in pure MCTS without
             Neural network, this value will be 0) for the current player.
         _weight_c: a number in (0, inf) that controls how quickly exploration
@@ -424,7 +424,7 @@ class MCTSWithDNN(TreeSearch):
         policy, value = self._policy_value_fn(state)
         # Check for end of game
         is_end, winner = state.gameEnd()
-        if not is_end: 
+        if not is_end:
             if node.vis_times >= self._expand_bound:
                 node.expand(policy)
         else:
@@ -442,7 +442,7 @@ class MCTSWithDNN(TreeSearch):
 
         Args:
             state: Current board state.
-            exploration_level: temperature parameter in (0, 1] controls 
+            exploration_level: temperature parameter in (0, 1] controls
                 the level of exploration.
 
         Return:
@@ -485,7 +485,7 @@ class MCTSWithDNN(TreeSearch):
 
         Args:
             state: Current board state.
-            decay_level: A value describe the importence of this think action. 
+            decay_level: A value describe the importence of this think action.
                 A higher value means MCTS will pay less attention to this 'think action'.
         """
         for _ in range(self._compute_budget // decay_level):
@@ -506,13 +506,13 @@ class MCTSWithDNN(TreeSearch):
             self.root.parent = None
         else:
             self.root = MCTSTreeNode(None, 1.0)
-    
+
     def reset(self):
         self.root = MCTSTreeNode(None, 1.0)
 
     def __str__(self):
         return "MCTS(DNN version) with compute budget {} and weight c {}".format(self._compute_budget, self._weight_c)
-    
+
     @property
     def silent(self):
         return self._silent
@@ -520,5 +520,5 @@ class MCTSWithDNN(TreeSearch):
     def silent(self, given_value):
         if isinstance(given_value, bool):
             self._silent = given_value
-            
+
     __repr__ = __str__
